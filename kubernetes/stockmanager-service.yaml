@@ -19,7 +19,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: stockmanager
-spec:
   spec:
   selector:
     matchLabels:
@@ -32,7 +31,7 @@ spec:
     spec:
       containers:
       - name: stockmanager
-        image: thetips4you/stockmanager:latest
+        image: sanketmogal/stockmanager:latest
         ports:
         - containerPort: 8030
         livenessProbe:
